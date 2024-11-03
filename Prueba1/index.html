@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Empleados</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h2>Registro de Empleados</h2>
+    <div class="form-container">
+        <label>Nombre</label>
+        <input type="text" id="name" required>
+
+        <label>Apellido Paterno</label>
+        <input type="text" id="lastname1" required>
+
+        <label>Apellido Materno</label>
+        <input type="text" id="lastname2" required>
+
+        <label>Fecha de Nacimiento</label>
+        <input type="date" id="born" required>
+
+        <label>Área</label>
+        <input type="text" id="area" required>
+
+        <button id="addEmployeeButton">Agregar Empleado</button>
+    </div>
+    <div class="table-container">
+        <table id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Área</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas agregadas -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
